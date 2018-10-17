@@ -5,70 +5,223 @@
     <title>AEC SIGCOMM Review Template</title>
 </head>
 <body>
-   <h1>ACM SIGCOMM Artefact Review Template</h1>
 
-   <ol>
-      <li><h2>Reviewer Confidence:</h2>
-   	   <form action="">
+  <h1>ACM SIGCOMM Artefact Review Template</h1>
+
+    <ol>
+      <h3><li>Reviewer Confidence:</h3>
+   	  <form action="">
             <input type="radio" name="confidence" value="expert">Expert<br>
             <input type="radio" name="confidence" value="knowledgable"> Knowledgeable<br>
             <input type="radio" name="confidence" value="familiar"> Some familiarities<br>
             <input type="radio" name="confidence" value="none"> None
-         </form>
+       </form>
       </li>
+    </ol>
 
-	   <br>
-	
+<h2>General Information</h2>
+
+    <ol>
+
+      <h3><li>Type of Artefact:</h3>
+        <form action="">
+              <input type="radio" name="type" value="dataset">Dataset<br>
+              <input type="radio" name="type" value="script"> Script/Tools<br>
+              <input type="radio" name="type" value="new"> New Artefact<br>
+              <input type="radio" name="type" value="extension"> Extension of Existing Artefact
+         </form>
+       </li>
+
+       <h3><li> What is the degree of efforts to obtain the artefact?</h3>
+         Rate from 0% to 100%, where 0% means NOT AVAILABLE; 10%, VERY HARD TO OBTAIN up to 100% meaning VERY EASY TO OBTAIN.
+         <form action="">
+           <input type="radio" name="effort" value="0"> 0%<br>
+           <input type="radio" name="effort" value="10"> 10%<br>
+           <input type="radio" name="effort" value="20"> 20%<br>
+           <input type="radio" name="effort" value="30"> 30%<br>
+           <input type="radio" name="effort" value="40"> 40%<br>
+           <input type="radio" name="effort" value="50"> 50%<br>
+           <input type="radio" name="effort" value="60"> 60%<br>
+           <input type="radio" name="effort" value="70"> 70%<br>
+           <input type="radio" name="effort" value="80"> 80%<br>
+           <input type="radio" name="effort" value="90"> 90%<br>
+           <input type="radio" name="effort" value="100"> 100%
+         </form>
+       </li>
+
+       <h3><li>Comment about the degree of efforts to obtain the artefact:</h3> E.g., did the paper have explicit pointer to the artefact? The artefact is simply not available. I need to register to obtain the artefact. The artefact is a testbed and I cannot use it. The artefact is actually hardware, I cannot obtain it. The artefact is licensed and I should pay...
+         <br>
+         <textarea rows="5" cols="70">
+         </textarea>
+       </li>
+
+       <h3><li>Do you consider that the nature of the artefact (or any component of it) may raise (non-technical) issues? Of which Nature? </h3>
+         E.g., ethical issues; non FRAND - Fair, Reasonable and Non Discriminatory - licenses; environmental issues; safety issues;...
+         <br>
+         <textarea rows="5" cols="70">
+         </textarea>
+       </li>
+
+       <h3><li>Has the artefact been deposited in what can be reasonably considered the most appropriate available repository, which ensures perennially availability?</h3>
+         <br>
+         <textarea rows="5" cols="70">
+         </textarea>
+       </li>
+
+       <h3><li>In relation to the previous point, how long do you expect or estimate the artefact will be available:</h3>
+         <form action="">
+               <input type="radio" name="duration" value="less1">Less than 1 year<br>
+               <input type="radio" name="duration" value="2to5"> Between 2 and 5 years<br>
+               <input type="radio" name="duration" value="5to10"> Between 5 and 10 years<br>
+               <input type="radio" name="duration" value="more10"> More than 10 years
+          </form>
+       </li>
+     </ol>
 
 
-General Information 
+
+<h2>Completeness of the Information</h2>
+
+<ol>
+  <h3><li>Are the instructions on how to install and make the artefact functional provided?</h3>
+     Rate from 0% to 100%, where 0% means NOT INSTRUCTION PROVIDED; 10% VERY HARD TO UNDERSTAND up to 100% meaning VERY EASY TO INSTALL AND RUN.<br>
+     In case of a data set the question has to be answered considering 0% means NOT DATA FORMAT DESCRIPTION; 10% VERY HARD TO UNDERSTAND THE DATA FORMAT up to 100% meaning VERY EASY TO UNDERSTAND AND USE THE DATA.
+     <form action="">
+       <input type="radio" name="doc" value="0"> 0%<br>
+       <input type="radio" name="doc" value="10"> 10%<br>
+       <input type="radio" name="doc" value="20"> 20%<br>
+       <input type="radio" name="doc" value="30"> 30%<br>
+       <input type="radio" name="doc" value="40"> 40%<br>
+       <input type="radio" name="doc" value="50"> 50%<br>
+       <input type="radio" name="doc" value="60"> 60%<br>
+       <input type="radio" name="doc" value="70"> 70%<br>
+       <input type="radio" name="doc" value="80"> 80%<br>
+       <input type="radio" name="doc" value="90"> 90%<br>
+       <input type="radio" name="doc" value="100"> 100%
+     </form>
+   </li>
+
+  <h3><li>Comment about the efforts to obtain, install, and use the artefact:</h3>
+    E.g., very limited instructions were given; I abandoned at some point because it was not clear what to do; it was difficult to figure out what exactly are the steps to follow; easy to follow but some degree of familiarity is necessary; very simple step-by-step instructions have been provided; piece of cake, the authors provide a guide for dummies; I had nothing to do I just downloaded a VM image.
+    <br>
+    <textarea rows="5" cols="70">
+    </textarea>
+  </li>
 
 
-Type of Artefact:
- 	[ ]  Dataset    
-	[ ]  Script/Tools 
-	[ ]  New Artefact
-	[ ]  Extension of existing artefact
+  <h3><li>If the artefact reached the "functional" level, meaning that it seems to function correctly, did the authors provide all of the information and meta-data needed for others to reuse the artefact?</h3>
+      Rate from 0%  to 100%, where 0% means NO DOCUMENTATION PROVIDED; 10% DOCUMENTATION HARD TO UNDERSTAND up to 100% meaning DOCUMENTATION VERY CLEAR AND EASY TO UNDERSTAND.
+      <form action="">
+        <input type="radio" name="reuse" value="0"> 0%<br>
+        <input type="radio" name="reuse" value="10"> 10%<br>
+        <input type="radio" name="reuse" value="20"> 20%<br>
+        <input type="radio" name="reuse" value="30"> 30%<br>
+        <input type="radio" name="reuse" value="40"> 40%<br>
+        <input type="radio" name="reuse" value="50"> 50%<br>
+        <input type="radio" name="reuse" value="60"> 60%<br>
+        <input type="radio" name="reuse" value="70"> 70%<br>
+        <input type="radio" name="reuse" value="80"> 80%<br>
+        <input type="radio" name="reuse" value="90"> 90%<br>
+        <input type="radio" name="reuse" value="100"> 100%
+      </form>
+  </li>
 
-What is the degree of efforts to obtain the artefact? Rate from 0% to 100%, where 0% means NOT AVAILABLE; 10%, VERY HARD TO OBTAIN up to 100% meaning VERY EASY TO OBTAIN.
+  <h3><li>Comment about the quality of the documentation:</h3>
+    E.g., documentation is complete and clear; documentation is lacking fundamental explanations; authors even explain in details how to reproduce the paper; documentation is not provided; documentation is lacking the following basic information;...
+    <br>
+    <textarea rows="5" cols="70">
+    </textarea>
+  </li>
 
-Comment about the degree of efforts to obtain the artefact (e.g., did the paper have explicit pointer to the artefact? The artefact is simply not available. I need to register to obtain the artefact. The artefact is a testbed and I cannot use it. The artefact is actually hardware, I cannot obtain it. The artefact is licensed and I should pay...):
-[Text Box]
+  <h3><li>If the artefact reached the "functional" level, meaning that it seems to function correctly, can the artefact be easily reused and/or repurposed?</h3>
+      Rate from 0%  to 100%, where 0% means IMPOSSIBLE TO REUSE; 10% VERY LIMITED REUSABILITY up to 100% meaning ARTEFACT VERY EASY TO REUSE/REPURPOSE.
+      <form action="">
+        <input type="radio" name="reuse" value="0"> 0%<br>
+        <input type="radio" name="reuse" value="10"> 10%<br>
+        <input type="radio" name="reuse" value="20"> 20%<br>
+        <input type="radio" name="reuse" value="30"> 30%<br>
+        <input type="radio" name="reuse" value="40"> 40%<br>
+        <input type="radio" name="reuse" value="50"> 50%<br>
+        <input type="radio" name="reuse" value="60"> 60%<br>
+        <input type="radio" name="reuse" value="70"> 70%<br>
+        <input type="radio" name="reuse" value="80"> 80%<br>
+        <input type="radio" name="reuse" value="90"> 90%<br>
+        <input type="radio" name="reuse" value="100"> 100%
+      </form>
+  </li>
 
-Do you consider that the nature of the artefact (or any component of it) may raise (non-technical) issues (e.g., ethical issues; non FRAND - Fair, Reasonable and Non Discriminatory - licenses; environmental issues; safety issues)? Of which Nature? 
-[Text Box]
-
-Has the artefact been deposited in what can be reasonably considered the most appropriate available repository, which ensures perennially availability? 
-[Text  Box]
-
-In relation to the previous point, how long do you expect or estimate the artefact will be available:
-Less than one year
-2 to 5 years
-5 to 10 years
-More than 10 years
+  <h3><li>Comment about the degree of reusability/repurposing:</h3>
+     E.g., I already have some ideas how to reuse it; the artefact does not sufficiently feature-rich to be reused; I can see opportunities to use it for; the artefact is functional but reusing it is kind of a hassle...
+    <br>
+    <textarea rows="5" cols="70">
+    </textarea>
+  </li>
+</ol>
 
 
+<h2>Research Supported by the Artefact</h2>
+
+  <ol>
+    <h3><li>Artefact Weight in the Research Paper</h3>
+      Considering the portion of the paper supported by artefacts (included other artefacts not proposed by the authors), what share the key results therein are clearly directly linked to the provided artefact?  Please choose between  0%  and 100%. Where 0% means no key results are directly related to the artefact and 100% means that all of the key results therein are clearly directly obtained with the artefact.
+      <form action="">
+        <input type="radio" name="research" value="0"> 0%<br>
+        <input type="radio" name="research" value="10"> 10%<br>
+        <input type="radio" name="research" value="20"> 20%<br>
+        <input type="radio" name="research" value="30"> 30%<br>
+        <input type="radio" name="research" value="40"> 40%<br>
+        <input type="radio" name="research" value="50"> 50%<br>
+        <input type="radio" name="research" value="60"> 60%<br>
+        <input type="radio" name="research" value="70"> 70%<br>
+        <input type="radio" name="research" value="80"> 80%<br>
+        <input type="radio" name="research" value="90"> 90%<br>
+        <input type="radio" name="research" value="100"> 100%
+      </form>
+    </li>
+  </ol>
 
 
-Completeness of the Information 
+  <h2>Recommendation</h2>
 
-Are the instructions on how to install and make the artefact functional provided? Rate from 0% to 100%, where 0% means NOT INSTRUCTION PROVIDED; 10% VERY HARD TO UNDERSTAND up to 100% meaning VERY EASY TO INSTALL AND RUN.
+  <ol>
 
-Comment about the efforts to obtain, install, and use the artefact (e.g., very limited instructions were given; I abandoned at some point because it was not clear what to do; it was difficult to figure out what exactly are the steps to follow; easy to follow but some degree of familiarity is necessary; very simple step-by-step instructions have been provided; piece of cake, the authors provide a guide for dummies; I had nothing to do I just downloaded a VM image):
-[Text Box]
+    <h3><li>Badge Recommendation based on teh following ACM Badge definitions:</h3>
 
-— Note — Question 1 must be worked out because for things like data sets and platforms it does not apply in the current form. Should be declined in different versions.
+      <ul>
+        <li>
+          <strong>Artefacts Available:</strong> Author-created artefacts relevant to this paper is publicly available. A DOI or link to this  repository along with a unique identifier for the object is provided.
+        </li><br>
 
-If the artefact reached the "functional" level, meaning that it seems to function correctly, did the authors provide all of the information and meta-data needed for others to reuse the artefact?  Rate from 0%  to 100%, where 0% means NO DOCUMENTATION PROVIDED; 10% DOCUMENTATION HARD TO UNDERSTAND up to 100% meaning DOCUMENTATION VERY CLEAR AND EASY TO UNDERSTAND.
+        <li>
+          <strong>Artefacts Evaluated – Functional:</strong> The artefacts associated with the research are found to be documented, consistent, complete, exercisable, and include appropriate evidence of  verification and validation.
+        </li><br>
 
-Comment about the quality of the documentation (e.g., documentation is complete and clear; documentation is lacking fundamental explanations; authors even explain in details how to reproduce the paper; documentation is not provided; documentation is lacking the following basic information:….): 
-[Text Box]
+        <li>
+          <strong>Artefacts Evaluated – Reusable:</strong> The artefacts associated with the paper are of a quality that      significantly exceeds minimal functionality. That is, they have all the qualities of the Artefacts Evaluated – Functional level, but, in addition, they are very carefully documented and well-structured to the  extent that reuse and repurposing is facilitated. In particular, norms and standards of the research community for artefacts of this type are strictly adhered to.
+        </li><br>
+      </ul>
+      <br>
+      <form action="">
+        <input type="radio" name="badge" value="none"> No Badge<br>
+        <input type="radio" name="badge" value="available"> Artefact Evaluated - Available<br>
+        <input type="radio" name="badge" value="fucntional"> Artefact Evaluated - Functional<br>
+        <input type="radio" name="badge" value="reusable"> Artefact Evaluated - Reusable
+      </form>
 
-If the artefact reached the "functional" level, meaning that it seems to function correctly, can the artefact be easily reused and/or repurposed?  Rate from 0%  to 100%, where 0% means IMPOSSIBLE TO REUSE; 10% VERY LIMITED REUSABILITY up to 100% meaning ARTEFACT VERY EASY TO REUSE/REPURPOSE.
+      <br>
 
-Comment about the degree of reusability/repurposing (e.g., I already have some ideas how to reuse it; the artefact does not sufficiently feature-rich to be reused; I can see opportunities to use it for: …..; the artefact is functional but reusing it is kind of a hassle): 
-[Text Box]
-   </ol>
-   
+      <h3>Comments to the authors</h3>
+      <textarea rows="5" cols="70">
+      </textarea>
+
+      <h3>Confidential comments to the AEC (Hidden to the authors)</h3>
+      <textarea rows="5" cols="70">
+      </textarea>
+
+
+      <h3>Authors rebuttal for AEC public reporting</h3>
+
+    </ol>
+
 </body>
 </html>
