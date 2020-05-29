@@ -184,33 +184,58 @@
   <h2>Recommendation</h2>
 
   <ol>
-
-    <h3><li>Badge Recommendation based on th following ACM Badge definitions:</h3>
-
+ 
+    <li><h3>Available Badge Recommendation:</h3>
       <ul>
         <li>
           <strong>Artefacts Available:</strong> Author-created artefacts relevant to this paper is publicly available. A DOI or link to this  repository along with a unique identifier for the object is provided.
         </li><br>
+      </ul>
 
+       <p>See <a href="https://www.acm.org/publications/policies/artifact-review-badging">Artifact Review and Badging</a> for details.</p>
+         <br>
+         <form action="">
+         <input type="radio" name="badge" value="none"> No Badge<br>
+         <input type="radio" name="badge" value="available"> Artefact Evaluated - Available<br>
+         </form>
+
+         <br>
+     </li>  
+    <li><h3>Functional Badge Recommendation:</h3>
+      <ul>
         <li>
           <strong>Artefacts Evaluated – Functional:</strong> The artefacts associated with the research are found to be documented, consistent, complete, exercisable, and include appropriate evidence of  verification and validation.
         </li><br>
+     </ul>
 
+       <p>See <a href="https://www.acm.org/publications/policies/artifact-review-badging">Artifact Review and Badging</a> for details.</p>
+         <br>
+         <form action="">
+            <input type="radio" name="badge" value="none"> No Badge<br>
+            <input type="radio" name="badge" value="fucntional"> Artefact Evaluated - Functional<br>
+         </form>
+      <br>
+     </li>
+     
+    <li><h3>Re-Usable Recommendation:</h3>
+      <ul>
         <li>
           <strong>Artefacts Evaluated – Reusable:</strong> The artefacts associated with the paper are of a quality that      significantly exceeds minimal functionality. That is, they have all the qualities of the Artefacts Evaluated – Functional level, but, in addition, they are very carefully documented and well-structured to the  extent that reuse and repurposing is facilitated. In particular, norms and standards of the research community for artefacts of this type are strictly adhered to.
         </li><br>
       </ul>
-     <p>See <a href="https://www.acm.org/publications/policies/artifact-review-badging">Artifact Review and Badging</a> for details.</p>
+
+       <p>See <a href="https://www.acm.org/publications/policies/artifact-review-badging">Artifact Review and Badging</a> for details.</p>
       <br>
       <form action="">
         <input type="radio" name="badge" value="none"> No Badge<br>
-        <input type="radio" name="badge" value="available"> Artefact Evaluated - Available<br>
-        <input type="radio" name="badge" value="fucntional"> Artefact Evaluated - Functional<br>
         <input type="radio" name="badge" value="reusable"> Artefact Evaluated - Reusable
       </form>
 
       <br>
 
+       </li>
+
+      </ul>
       <h3>Comments to the authors</h3>
       <textarea rows="5" cols="70">
       </textarea>
@@ -220,7 +245,10 @@
       </textarea>
 
 
-      <h3>Authors rebuttal for AEC public reporting</h3>
+      <h3>Suggestion to improve review form (Hidden to the authors)</h3>
+      <textarea rows="5" cols="70">
+      </textarea>
+
 
     </ol>
 
